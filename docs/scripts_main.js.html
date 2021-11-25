@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>scripts/main.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Router_Router.html">Router</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addFav">addFav</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addMy">addMy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#backToView">backToView</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#bindEscKey">bindEscKey</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#bindPopstate">bindPopstate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#changeHeart">changeHeart</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkFav">checkFav</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFavRecipeCards">createFavRecipeCards</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFavRecipePage">createFavRecipePage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFeaRecipeCards">createFeaRecipeCards</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFeaRecipePage">createFeaRecipePage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createMyRecipeCards">createMyRecipeCards</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createMyRecipePage">createMyRecipePage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteRecipe">deleteRecipe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#feaRecipeToLand">feaRecipeToLand</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#fetchFeaRecipeArray">fetchFeaRecipeArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getDairy">getDairy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFeaturedSteps">getFeaturedSteps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getGluten">getGluten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getImgUrl">getImgUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIngre">getIngre</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIngreArray">getIngreArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getSteps">getSteps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getStepsArray">getStepsArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTime">getTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTitle">getTitle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getVegan">getVegan</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getVegeta">getVegeta</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveFavorite">leaveFavorite</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveFeatured">leaveFeatured</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveLanding">leaveLanding</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveMain">leaveMain</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveMyRecipe">leaveMyRecipe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadFavorite">loadFavorite</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadFeatured">loadFeatured</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadLanding">loadLanding</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadMain">loadMain</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadMyRecipe">loadMyRecipe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#myRecipeToEdit">myRecipeToEdit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#myRecipeToLand">myRecipeToLand</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeIngreItem">removeIngreItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#removeInstruItem">removeInstruItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#rmFav">rmFav</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#rmMy">rmMy</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#router">router</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setButtonListen">setButtonListen</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updateMy">updateMy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#viewNutrition">viewNutrition</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#viewRecipe">viewRecipe</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">scripts/main.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// main.js
+import { Router } from "./Router.js";
+
+export const $ = (selector) => document.querySelector(selector);
+
+let nextMyRecipeID = JSON.parse(localStorage.getItem("nextMyRecipeID"));
+let feaRecipeArray = JSON.parse(localStorage.getItem("feaRecipeArray"));
+let myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray"));
+let favRecipeArray = JSON.parse(localStorage.getItem("favRecipeArray"));
+
+/**
+ * Creating a router object. The constructor's function is the "home" function
+ */
+export const router = new Router(function () {
+  console.log("Returning to landing page!");
+  leaveFeatured();
+  leaveFavorite();
+  leaveMyRecipe();
+  $("#add-recipe-page").classList.remove("main-shown");
+  $("#add-recipe-page").innerHTML = "";
+  $("#view-recipe-page").classList.remove("main-shown");
+  $("#view-recipe-page").innerHTML = "";
+  $("#delete-page").classList.remove("main-shown");
+  $("#delete-page").innerHTML = "";
+  $("#view-nutrition-page").classList.remove("main-shown");
+  $("#view-nutrition-page").innerHTML = "";
+  loadMain();
+  loadLanding();
+});
+
+window.addEventListener("DOMContentLoaded", init);
+
+/**
+ * Initial and load page
+ * @returns a Promise of fetched data
+ */
+async function init() {
+  let fetchSuccessful = await fetchFeaRecipeArray();
+  if (!fetchSuccessful) {
+    console.log("Recipe fetch unsuccessful");
+    return;
+  }
+
+  let addFeaCardSuccessful = await createFeaRecipeCards();
+  if (!addFeaCardSuccessful) {
+    console.log("Add featured recipe unsuccessful");
+    return;
+  }
+
+  let addFavCardSuccessful = await createFavRecipeCards();
+  if (!addFavCardSuccessful) {
+    console.log("Add favorite recipe unsuccessful");
+    return;
+  }
+
+  let addMyCardSuccessful = await createMyRecipeCards();
+  if (!addMyCardSuccessful) {
+    console.log("Add my recipe unsuccessful");
+    return;
+  }
+
+  // Routing for every card in feaReicpeArray
+  for (let i = 0; i &lt; feaRecipeArray.length; i++ ) {
+    let page = feaRecipeArray[i]["title"];
+    page = page.replace(/&amp;/g, ""); // replace all ampersand in string
+    router.addPage(page, () => {
+      $("#view-recipe-page").classList.remove("main-shown");
+      $("#view-recipe-page").innerHTML = "";
+      $("#view-recipe-page").classList.add("main-shown");
+      const viewRecipePage = document.createElement("view-fea-recipe");
+      viewRecipePage.data = feaRecipeArray[i];
+      $("#view-recipe-page").appendChild(viewRecipePage);
+      leaveMain();
+    });
+  }
+
+  // Routing for every card in myRecipeArray
+  // Since we're allowing duplicate name, we'll use id to distinguish them
+  for (let i = 0; i &lt; myRecipeArray.length; i++) {
+    // Routing for viewing/checking out recipe
+    router.addPage(myRecipeArray[i]["id"], () => {
+      myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray")); // update the array
+      $("#add-recipe-page").classList.remove("main-shown");
+      $("#add-recipe-page").innerHTML = "";
+      $("#view-recipe-page").classList.remove("main-shown");
+      $("#view-recipe-page").innerHTML = "";
+      $("#view-recipe-page").classList.add("main-shown");
+      const viewRecipePage = document.createElement("view-my-recipe");
+      viewRecipePage.data = myRecipeArray[i];
+      $("#view-recipe-page").appendChild(viewRecipePage);
+      leaveMain();
+    });
+
+    // Routing for editing a recipe
+    // router.addPage(myRecipeArray[i]["id"]+"Edit", () => {
+    //   myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray")); // update the array
+    //   $("#view-recipe-page").classList.remove("main-shown");
+    //   $("#view-recipe-page").innerHTML = "";
+    //   let editRecipePage = document.createElement("edit-recipe");
+    //   editRecipePage.data = myRecipeArray[i];
+    //   $("#add-recipe-page").appendChild(editRecipePage);
+    //   $("#add-recipe-page").classList.add("main-shown");
+    // });
+  }
+
+
+  // Routing for section page links
+  router.addPage("ToFeaturedPage", () => {
+    $("#view-recipe-page").classList.remove("main-shown");
+    $("#view-recipe-page").innerHTML = "";
+    loadMain();
+    leaveLanding();
+    loadFeatured();
+  });
+
+  router.addPage("ToFavoritePage", () => {
+    $("#view-recipe-page").classList.remove("main-shown");
+    $("#view-recipe-page").innerHTML = "";
+    loadMain();
+    leaveLanding();
+    loadFavorite();
+  });
+
+  router.addPage("ToMyRecipePage", () => {
+    $("#view-recipe-page").classList.remove("main-shown");
+    $("#view-recipe-page").innerHTML = "";
+    loadMain();
+    leaveLanding();
+    loadMyRecipe();
+  })
+
+  setButtonListen();
+  bindEscKey();
+  bindPopstate();
+}
+
+
+/**
+ * Fetch data from spoonacular API (this function makes a call to another function
+ * in the back-end Netlify service that is used to call our API. This way, the API key 
+ * is hidden from the client-side)
+ * @returns a Promise of fetched data
+ */
+async function fetchFeaRecipeArray() {
+  return new Promise((resolve, reject) => {
+    if (feaRecipeArray == null) {
+      fetch("./.netlify/functions/fetch-data")
+        // fetch("https://api.spoonacular.com/recipes/random?apiKey=...&amp;number=30")
+        .then((response) => response.json())
+        .then((data) => {
+          feaRecipeArray = data;
+          localStorage.setItem("feaRecipeArray", JSON.stringify(feaRecipeArray));
+          resolve(true);
+        }).catch(() => reject(false));
+    }
+    else {
+      resolve(true);
+    }
+  });
+}
+
+
+/**
+ * Initial Featured Recipes section with three random recipes from feaRecipeArray
+ * @returns a Promise of fetched data
+ */
+function createFeaRecipeCards() {
+  return new Promise((resolve) => {
+    $("#featured-list").innerHTML = "";
+    let index = Math.round(Math.random() * 5);
+    for (let i = index; i &lt; index + 3; i++) {
+      let newFeaRecipeCard = document.createElement("recipe-card-fea");
+      newFeaRecipeCard.data = feaRecipeArray[i];
+      $("#featured-list").appendChild(newFeaRecipeCard);
+    }
+    resolve(true);
+  });
+}
+
+
+/**
+ * Initial Favorites Recipes section with three recipes from favRecipeArray
+ * If no favorite recipes, then remove the Favorites Recipes section
+ * @returns a Promise of fetched data
+ */
+function createFavRecipeCards() {
+  return new Promise((resolve) => {
+    favRecipeArray = JSON.parse(localStorage.getItem("favRecipeArray")); // update to new array
+
+    if (favRecipeArray === null || favRecipeArray.length === 0) {
+      favRecipeArray = [];
+      $("#favorite-recipes").classList.remove("shown");
+      resolve(true);
+    }
+    $("#favorite-list").innerHTML = "";
+    // console.log(favRecipeArray);
+    for (let i = 0; i &lt; 3 &amp;&amp; i &lt; favRecipeArray.length; i++) {
+      // for (let i = 0; i &lt; 3 &amp;&amp; i &lt; feaRecipeArray.length; i++) {            // Test code
+      let newFavRecipeCard = document.createElement("recipe-card-fea");
+      newFavRecipeCard.data = favRecipeArray[i];
+      // newFavRecipeCard.data = feaRecipeArray[i];                          // Test code
+      $("#favorite-list").appendChild(newFavRecipeCard);
+    }
+    if (favRecipeArray.length &lt; 3) {
+      for (let i = 0; i &lt; 3 - favRecipeArray.length; i++) {
+        let addEmptyCard = document.createElement("empty-card");
+        $("#favorite-list").appendChild(addEmptyCard);
+      }
+    }
+    resolve(true);
+  });
+}
+
+/**
+ * Initial My Recipes section with three recipes from myRecipeArray
+ * @returns a Promise of fetched data
+ */
+function createMyRecipeCards() {
+  return new Promise((resolve) => {
+    myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray")); // update to new array
+
+    if (nextMyRecipeID == null) {
+      nextMyRecipeID = 0;
+    }
+
+    if (myRecipeArray == null) {
+      myRecipeArray = [];
+    }
+
+    $("#my-list").innerHTML = "";
+    let addNewCard = document.createElement("new-card");
+    $("#my-list").appendChild(addNewCard);
+    for (let i = 0; i &lt; 2 &amp;&amp; i &lt; myRecipeArray.length; i++) {
+      // for (let i = 0; i &lt; 2 &amp;&amp; i &lt; feaRecipeArray.length; i++) {            // Test code
+      let newMyRecipeCard = document.createElement("recipe-card-my");
+      // console.log(myRecipeArray);
+      newMyRecipeCard.data = myRecipeArray[i];
+      // newFavRecipeCard.data = feaRecipeArray[i];                          // Test code
+
+      // Update routing when a recipe is added
+      // Routing for viewing/checking a recipe 
+      router.addPage(myRecipeArray[i]["id"], () => {
+        myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray")); // update the array
+        $("#add-recipe-page").classList.remove("main-shown");
+        $("#add-recipe-page").innerHTML = "";
+        $("#view-recipe-page").classList.remove("main-shown");
+        $("#view-recipe-page").innerHTML = "";
+        $("#view-recipe-page").classList.add("main-shown");
+        const viewRecipePage = document.createElement("view-my-recipe");
+        viewRecipePage.data = myRecipeArray[i];
+        $("#view-recipe-page").appendChild(viewRecipePage);
+        leaveMain();
+      });
+  
+      $("#my-list").appendChild(newMyRecipeCard);
+    }
+    if (myRecipeArray.length &lt; 2) {
+      for (let i = 0; i &lt; 2 - myRecipeArray.length; i++) {
+        let addEmptyCard = document.createElement("empty-card");
+        $("#my-list").appendChild(addEmptyCard);
+      }
+    }
+    resolve(true);
+  });
+}
+
+
+/**
+ * Initial Featured Recipes page with all recipes from feaRecipeArray
+ * @returns a Promise
+ */
+function createFeaRecipePage() {
+  return new Promise((resolve) => {
+    $("#featured-page-list").innerHTML = "";
+    for (let i = 0; i &lt; feaRecipeArray.length; i++) {
+      let newFeaRecipeCard = document.createElement("recipe-card-featured-pg");
+      newFeaRecipeCard.data = feaRecipeArray[i];
+      $("#featured-page-list").appendChild(newFeaRecipeCard);
+    }
+    resolve(true);
+  });
+}
+
+
+/**
+ * Initial favorite Recipes page with all recipes from favRecipeArray
+ * @returns a Promise
+ */
+function createFavRecipePage() {
+  return new Promise((resolve) => {
+    $("#favorite-page-list").innerHTML = "";
+    favRecipeArray = JSON.parse(localStorage.getItem("favRecipeArray")); // update to new array
+    // console.log(favRecipeArray);
+    for (let i = 0; i &lt; favRecipeArray.length; i++) {
+      let newFavRecipeCard = document.createElement("recipe-card-featured-pg");
+      newFavRecipeCard.data = favRecipeArray[i];
+      $("#favorite-page-list").appendChild(newFavRecipeCard);
+    }
+    if (favRecipeArray.length === 0) {
+      let noFavTip = document.createElement("h1");
+      noFavTip.textContent = "You may not have favorite recipe. You could add new one.";
+      $("#favorite-page-list").appendChild(noFavTip);
+    }
+    resolve(true);
+  });
+}
+
+
+/**
+ * Initial My Recipes page with all recipes from myRecipeArray
+ * @returns a Promise
+ */
+export function createMyRecipePage() {
+  return new Promise((resolve) => {
+    myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray")); // update to the new array
+
+    if (nextMyRecipeID == null) {
+      nextMyRecipeID = 0;
+    }
+
+    if (myRecipeArray == null) {
+      myRecipeArray = [];
+    }
+
+    $("#my-page-list").innerHTML = "";
+    for (let i = 0; i &lt; myRecipeArray.length; i++) {
+      let newMyRecipeCard = document.createElement("recipe-card-my-my-page");
+      newMyRecipeCard.data = myRecipeArray[i];
+
+      // Update routing when a recipe is added in myrecipe page
+      // Routing for viewing/checking a recipe 
+      router.addPage(myRecipeArray[i]["id"], () => {
+        myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray")); // update the array
+        $("#add-recipe-page").classList.remove("main-shown");
+        $("#add-recipe-page").innerHTML = "";
+        $("#view-recipe-page").classList.remove("main-shown");
+        $("#view-recipe-page").innerHTML = "";
+        $("#view-recipe-page").classList.add("main-shown");
+        const viewRecipePage = document.createElement("view-my-recipe");
+        viewRecipePage.data = myRecipeArray[i];
+        $("#view-recipe-page").appendChild(viewRecipePage);
+        leaveMain();
+      });
+  
+      $("#my-page-list").appendChild(newMyRecipeCard);
+    }
+    let addNewCard = document.createElement("new-card-my-page");
+    $("#my-page-list").appendChild(addNewCard);
+    resolve(true);
+  });
+}
+
+
+
+/**
+ * Set event listener for all title button
+ * @returns void
+ */
+function setButtonListen() {
+  $("#to-feature-page").addEventListener("click", (e) => {
+    if (e.path[0].nodeName == "B") return;
+    router.navigate("ToFeaturedPage");
+  });
+
+  $("#feature-page-to-landing").addEventListener("click", (e) =>{
+    if (e.path[0].nodeName == "B") return;
+    router.navigate("home");
+  });
+
+  $("#to-favorite-page").addEventListener("click", (e) => {
+    if (e.path[0].nodeName == "B") return;
+    router.navigate("ToFavoritePage");
+  });
+
+  $("#favorite-page-to-landing").addEventListener("click", (e) => {
+    if (e.path[0].nodeName == "B") return;
+    router.navigate("home");
+  });
+
+  $("#to-my-page").addEventListener("click", (e) => {
+    if (e.path[0].nodeName == "B") return;
+    router.navigate("ToMyRecipePage");
+  });
+
+  $("#my-page-to-landing").addEventListener("click", (e) => {
+    if (e.path[0].nodeName == "B") return;
+    router.navigate("home");
+  });
+}
+
+
+/**
+ * Load landing page
+ * @returns void
+ */
+export function loadLanding() {
+  $("#add-recipe-page").classList.remove("main-shown");
+  $("#add-recipe-page").innerHTML = "";
+  $("#delete-page").classList.remove("main-shown");
+  $("#delete-page").innerHTML = "";
+  $("#featured-recipes").classList.add("shown");
+  $("#favorite-recipes").classList.add("shown");
+  $("#my-recipes").classList.add("shown");
+  createFeaRecipeCards();
+  createMyRecipeCards();
+  createFavRecipeCards();
+}
+
+
+/**
+* Leave landing page
+* @returns void
+*/
+export function leaveLanding() {
+  $("#featured-recipes").classList.remove("shown");
+  $("#favorite-recipes").classList.remove("shown");
+  $("#my-recipes").classList.remove("shown");
+  $("#featured-list").innerHTML = "";
+  $("#favorite-list").innerHTML = "";
+  $("#my-list").innerHTML = "";
+}
+
+/**
+ * Load featured page
+ * @returns void
+ */
+export function loadFeatured() {
+  $("#view-nutrition-page").classList.remove("main-shown");
+  $("#view-nutrition-page").innerHTML = "";
+  $("#featured-page").classList.add("shown");
+  createFeaRecipePage();
+}
+
+
+/**
+* Leave featured page
+* @returns void
+*/
+export function leaveFeatured() {
+  $("#featured-page").classList.remove("shown");
+  $("#featured-page-list").innerHTML = "";
+}
+
+/**
+ * Load favorite page
+ * @returns void
+ */
+export function loadFavorite() {
+  $("#view-nutrition-page").classList.remove("main-shown");
+  $("#view-nutrition-page").innerHTML = "";
+  $("#favorite-page").classList.add("shown");
+  createFavRecipePage();
+}
+
+
+/**
+* Leave favorite page
+* @returns void
+*/
+export function leaveFavorite() {
+  $("#favorite-page").classList.remove("shown");
+  $("#favorite-page-list").innerHTML = "";
+}
+
+
+/**
+ * Load my recipe page
+ * @returns void
+ */
+export function loadMyRecipe() {
+  $("#add-recipe-page").classList.remove("main-shown");
+  $("#add-recipe-page").innerHTML = "";
+  $("#delete-page").classList.remove("main-shown");
+  $("#delete-page").innerHTML = "";
+  $("#my-page").classList.add("shown");
+  createMyRecipePage();
+}
+
+
+/**
+* Leave my recipe page
+* @returns void
+*/
+export function leaveMyRecipe() {
+  $("#my-page").classList.remove("shown");
+  $("#my-page-list").innerHTML = "";
+}
+
+
+/**
+* Load main page (like to add page)
+* @returns void
+*/
+export function loadMain() {
+  $("#main-header").classList.add("main-shown");
+  $("#main-main").classList.add("main-shown");
+  $("#main-footer").classList.add("main-shown");
+}
+
+
+/**
+* Leave main page (like to add page)
+* @returns void
+*/
+export function leaveMain() {
+  $("#main-header").classList.remove("main-shown");
+  $("#main-main").classList.remove("main-shown");
+  $("#main-footer").classList.remove("main-shown");
+  $("#featured-list").innerHTML = "";
+  $("#favorite-list").innerHTML = "";
+  $("#my-list").innerHTML = "";
+  $("#featured-page-list").innerHTML = "";
+  $("#favorite-page-list").innerHTML = "";
+  $("#my-page-list").innerHTML = "";
+}
+
+
+/**
+ * Credit: Lab 7 skeleton, Tai's implementation of skeleton
+ * If the escape key is pressed, use your router to navigate() to the 'home'
+ * page. This will let us go back to the home page from the detailed page.
+ */
+function bindEscKey() {
+  document.addEventListener("keydown", (event) => {
+    if (event.key == "Escape") {
+      router.navigate("home");
+    }
+  });
+}
+
+/**
+ * Credit: Lab 7 skeleton, Tai's implementation of skeleton
+ * Binds the 'popstate' event on the window (which fires when the back &amp;
+ * forward buttons are pressed) so the navigation will continue to work 
+ * as expected.
+ */
+ function bindPopstate() {
+  /**
+   * IMPORTANT: Pass in the boolean true as the second argument in navigate() here
+   * so your navigate() function does not add your going back action to the history,
+   * creating an infinite loop
+   */
+  window.addEventListener("popstate", (event) => {
+    // console.log(event.state);
+    // console.log(history);
+
+    // if event.state == null then just navigate to home
+    if (event.state != undefined) {
+      router.navigate(event.state["page"], true);
+    } else {
+      router.navigate("home", true);
+    }
+  });
+
+  /**
+   * Handling global error
+   * Reload the page if an error occured
+   */
+  // window.addEventListener("error", () => {
+  //   window.location.reload();
+  // })
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Thu Nov 25 2021 19:39:29 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
