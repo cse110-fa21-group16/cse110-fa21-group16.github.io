@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>helpCrudFunc.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Router_Router.html">Router</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addFav">addFav</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#addMy">addMy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#bindEscKey">bindEscKey</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#bindPopstate">bindPopstate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#checkFav">checkFav</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFavRecipeCards">createFavRecipeCards</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFavRecipePage">createFavRecipePage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFeaRecipeCards">createFeaRecipeCards</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createFeaRecipePage">createFeaRecipePage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createMyRecipeCards">createMyRecipeCards</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#createMyRecipePage">createMyRecipePage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#fetchFeaRecipeArray">fetchFeaRecipeArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getDairy">getDairy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getFeaturedSteps">getFeaturedSteps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getGluten">getGluten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getImgUrl">getImgUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIngre">getIngre</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getIngreArray">getIngreArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getSteps">getSteps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getStepsArray">getStepsArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTime">getTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTitle">getTitle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getVegan">getVegan</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getVegeta">getVegeta</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveFavorite">leaveFavorite</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveFeatured">leaveFeatured</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveLanding">leaveLanding</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveMain">leaveMain</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#leaveMyRecipe">leaveMyRecipe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadFavorite">loadFavorite</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadFeatured">loadFeatured</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadLanding">loadLanding</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadMain">loadMain</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#loadMyRecipe">loadMyRecipe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#rmFav">rmFav</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#rmMy">rmMy</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#router">router</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#setButtonListen">setButtonListen</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#updateMy">updateMy</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">helpCrudFunc.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// helpCrudFunc.js
+let nextMyRecipeID = JSON.parse(localStorage.getItem("nextMyRecipeID"));
+let myRecipeArray = JSON.parse(localStorage.getItem("myRecipeArray"));
+let favRecipeArray = JSON.parse(localStorage.getItem("favRecipeArray"));
+
+/**
+ * Determine wether the recipe is in favRecipeArray
+ * @returns bool
+ */
+export function checkFav(recipeTitle) {
+    if (favRecipeArray === null || favRecipeArray.length === 0) {
+        favRecipeArray = [];
+    }
+    for (let i of favRecipeArray) {
+        if (i.title == recipeTitle) {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+/**
+* Remove the recipe from the favRecipeArray
+* @returns void
+*/
+export function rmFav(recipeTitle) {
+    let i = 0;
+    for (; i &lt; favRecipeArray.length; i++) {
+        if (favRecipeArray[i].title == recipeTitle) {
+            break;
+        }
+    }
+    delete favRecipeArray[i];
+    favRecipeArray = favRecipeArray.filter(function (e) { return e });
+    localStorage.setItem("favRecipeArray", JSON.stringify(favRecipeArray));
+}
+
+
+/**
+* Add the recipe to the favRecipeArray
+* @returns void
+*/
+export function addFav(data) {
+    favRecipeArray.push(data);
+    localStorage.setItem("favRecipeArray", JSON.stringify(favRecipeArray));
+}
+
+
+/**
+* Add the recipe to the myRecipeArray
+* @returns void
+*/
+export function addMy(data) {
+    
+    if (nextMyRecipeID == null) {
+        nextMyRecipeID = 0;
+    }
+
+    if (myRecipeArray == null) {
+        myRecipeArray = [];
+    }
+
+    data["id"] = nextMyRecipeID;
+    nextMyRecipeID += 1;
+    myRecipeArray.push(data);
+    console.log(myRecipeArray.length);
+    localStorage.setItem("nextMyRecipeID", JSON.stringify(nextMyRecipeID));
+    localStorage.setItem("myRecipeArray", JSON.stringify(myRecipeArray));
+}
+
+
+/**
+* Updata the recipe to the myRecipeArray
+* @returns void
+*/
+export function updateMy(data) {
+    let i = 0;
+    for (; i &lt; myRecipeArray.length; i++) {
+        if (myRecipeArray[i].id == data.id) {
+            myRecipeArray[i] = data;
+            break;
+        }
+    }
+    localStorage.setItem("myRecipeArray", JSON.stringify(myRecipeArray));
+}
+
+/**
+* Remove the recipe to the myRecipeArray
+* @returns void
+*/
+export function rmMy(data) {
+    let i = 0;
+    for (; i &lt; myRecipeArray.length; i++) {
+        if (myRecipeArray[i].id == data.id) {
+            break;
+        }
+    }
+    delete myRecipeArray[i];
+    myRecipeArray = myRecipeArray.filter(function (e) { return e });
+    localStorage.setItem("myRecipeArray", JSON.stringify(myRecipeArray));
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.4</a> on Thu Nov 25 2021 19:23:26 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
