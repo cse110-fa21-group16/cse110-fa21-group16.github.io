@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>components/RecipeCardFea.js - Documentation</title>
+    <title>Router - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,157 +29,529 @@
 
 <div id="main">
     
-    <h1 class="page-title">components/RecipeCardFea.js</h1>
+    <h1 class="page-title">Router</h1>
     
 
     
 
 
 
+
+<section>
+
+<header>
     
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>import { router } from "../scripts/main.js";
-import { getImgUrl, getTitle, getTime } from "../scripts/helpGetDataFunc.js";
-
-/**
- * This is the component for the Featured Recipe Card element in the landing page.
- * @class
- */
-class RecipeCardFea extends HTMLElement {
-  /**
-   * Attach the shadowroot which contains the Featured Recipe Card materials.
-   * @constructor
-   */
-  constructor() {
-    super();
-    this.shadow = this.attachShadow({ mode: "open" });
-  }
-
-  /**
-   * The data needed to populate the materials are passed in as "data".
-   * @param {Object} data a JSON data object contains information to populate this component.
-   */
-  set data(data) {
-    const styleElem = document.createElement("style");
-    const styles = `
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      
-      article {
-        align-items: center;
-        border: 1px solid rgb(223, 225, 229);
-        border-radius: 40px;
-        display: flex;
-        flex-direction: column;
-        height: 350px;
-        justify-content:space-between;
-        margin: 25px;
-        padding: 0 16px 16px 16px;
-        transition: all 0.4s linear;
-        width: 250px;
-        -moz-transition: all 0.4s linear;
-        -o-transition: all 0.4s linear;
-        -webkit-transition: all 0.4s linear; 
-      }
-
-      article:hover {
-        box-shadow:0px 1px 17px -8px #000;
-      }
-
-      article p {
-        color: #305A50;
-        font-size: 20px;
-        text-align: center;
-      }
-
-      article > img {
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
-        height: 180px;
-        object-fit: cover;
-        width: calc(100% + 32px);
-      }
-
-      article button {
-        border: 1px solid #ccccd8;
-        background-color: #fff;
-        border-radius: 14px;
-        color: #305A50;
-        cursor: pointer;
-        font-size: 20px;
-        padding: 5px 30px;
-      }
+        <h2>
+        Router
+        </h2>
+        
+            <div class="class-description">This is the Router class which contains routing functions for each page/component.
+This is where the navigation functions are stored and occured.</div>
+        
     
-      article button:hover {
-        border: 1px solid #313131;
-        background: darkgreen;
-        color: white;
-      }
+</header>
+
+<article>
+    <div class="container-overview">
     
-      article .cook-time {
-        font-size: 15px;
-      }
-    `;
-    styleElem.innerHTML = styles;
+        
+<div class="section-method">
 
-    const card = document.createElement("article");
+    
+    <h2>Constructor</h2>
+    
 
-    const recipeImg = document.createElement("img");
-    recipeImg.src = getImgUrl(data);
-    recipeImg.alt = getTitle(data);
-    card.appendChild(recipeImg);
+    <h4 class="name" id="Router"><span class="type-signature"></span>new Router<span class="signature">(homeFunc)</span><span class="type-signature"></span></h4>
 
-    // p element - title
-    const recipeTitle = document.createElement("p");
-    recipeTitle.classList.add("title");
-    recipeTitle.textContent = getTitle(data);
-    card.appendChild(recipeTitle);
+    
 
-    // time element
-    const time = document.createElement("p");
-    time.classList.add("cook-time");
-    const totalTime = getTime(data);
-    time.textContent = `${totalTime} min`;
-    card.appendChild(time);
 
-    // button element - check recipe
-    const checkButton = document.createElement("button");
-    checkButton.textContent = "COOK!";
-    card.appendChild(checkButton);
 
-    // bind check button to router
-    checkButton.addEventListener("click", (e) => {
-      let page = recipeTitle.innerHTML;
-      page = page.replace(/&amp;amp;/g, "");
-      router.navigate(page);
-    });
+<div class="description">
+    Sets up the home function, the page name should always be 'home', which
+is why no page name variable is passed in.
+</div>
 
-    this.shadow.appendChild(styleElem);
-    this.shadow.appendChild(card);
-  }
-}
 
-// /**
-//  * Load Featured Recipe Page
-//  * @param {Object} data a JSON data object contains information to load the view recipe page.
-//  */
-// export function viewRecipe(data) {
-//   $("#view-recipe-page").classList.add("main-shown");
-//   const viewRecipePage = document.createElement("view-fea-recipe");
-//   viewRecipePage.data = data;
-//   $("#view-recipe-page").appendChild(viewRecipePage);
-//   leaveMain();
-// }
 
-// Define the "recipe-card-fea" element using this class.
-customElements.define("recipe-card-fea", RecipeCardFea);
 
-</code></pre>
-        </article>
-    </section>
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scripts_Router.js.html">scripts/Router.js</a>, <a href="scripts_Router.js.html#line19">line 19</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>homeFunc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The function to run to set the home route
+                           visually
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+    </div>
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="Router.html">Router</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="addPage"><span class="type-signature"></span>addPage<span class="signature">(page, pageFunc)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Adds a page name & function so to the router so that the function
+can be called later when the page is passed in
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scripts_Router.js.html">scripts/Router.js</a>, <a href="scripts_Router.js.html#line30">line 30</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>page</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>String</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The name of the page to route to (this is used
+                     as the page's hash as well in the URL)
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageFunc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The function to run when the page is called
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="navigate"><span class="type-signature"></span>navigate<span class="signature">(page, statePopped)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Changes the page visually to the page that has been passed in. statePopped
+is used to avoid pushing a new history state on back/forward button presses
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scripts_Router.js.html">scripts/Router.js</a>, <a href="scripts_Router.js.html#line41">line 41</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>page</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>String</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                The name of the page to route to
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>statePopped</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Boolean</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                True if this function is being called from a
+                             'popstate' event instead of a normal card click
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
