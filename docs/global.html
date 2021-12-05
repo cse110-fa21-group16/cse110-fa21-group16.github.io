@@ -170,7 +170,7 @@
     
 
     
-    <h4 class="name" id="addFav"><span class="type-signature"></span>addFav<span class="signature">(data)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="addFav"><span class="type-signature"></span>addFav<span class="signature">(data, favRecipeArray)</span><span class="type-signature"></span></h4>
     
 
     
@@ -234,6 +234,29 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>favRecipeArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an array of favorited recipes.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -271,7 +294,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line47">line 47</a>
+        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -317,7 +340,7 @@
     
 
     
-    <h4 class="name" id="addMy"><span class="type-signature"></span>addMy<span class="signature">(data)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="addMy"><span class="type-signature"></span>addMy<span class="signature">(data, nextMyRecipeID, myRecipeArray)</span><span class="type-signature"></span></h4>
     
 
     
@@ -381,6 +404,52 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>nextMyRecipeID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a number representing the id of the next recipe to be created.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>myRecipeArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an array of created recipes.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -418,7 +487,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line58">line 58</a>
+        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line63">line 63</a>
     </li></ul></dd>
     
 
@@ -836,7 +905,7 @@ base amount of 1 serving and the desired number of servings.
     
 
     
-    <h4 class="name" id="checkFav"><span class="type-signature"></span>checkFav<span class="signature">(recipeTitle)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="checkFav"><span class="type-signature"></span>checkFav<span class="signature">(recipeTitle, favRecipeArray)</span><span class="type-signature"></span></h4>
     
 
     
@@ -900,6 +969,29 @@ base amount of 1 serving and the desired number of servings.
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>favRecipeArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an array of favorited recipes.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -937,7 +1029,7 @@ base amount of 1 serving and the desired number of servings.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line11">line 11</a>
+        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line12">line 12</a>
     </li></ul></dd>
     
 
@@ -5396,7 +5488,7 @@ is hidden from the client-side)
     
 
     
-    <h4 class="name" id="rmFav"><span class="type-signature"></span>rmFav<span class="signature">(recipeTitle)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="rmFav"><span class="type-signature"></span>rmFav<span class="signature">(recipeTitle, favRecipeArray)</span><span class="type-signature"></span></h4>
     
 
     
@@ -5460,6 +5552,29 @@ is hidden from the client-side)
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>favRecipeArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an array of favorited recipes.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -5497,7 +5612,7 @@ is hidden from the client-side)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line29">line 29</a>
+        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line31">line 31</a>
     </li></ul></dd>
     
 
@@ -5543,7 +5658,7 @@ is hidden from the client-side)
     
 
     
-    <h4 class="name" id="rmMy"><span class="type-signature"></span>rmMy<span class="signature">(data)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="rmMy"><span class="type-signature"></span>rmMy<span class="signature">(data, myRecipeArray)</span><span class="type-signature"></span></h4>
     
 
     
@@ -5607,6 +5722,29 @@ is hidden from the client-side)
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>myRecipeArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an array of created recipes.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -5644,7 +5782,7 @@ is hidden from the client-side)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line98">line 98</a>
+        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line105">line 105</a>
     </li></ul></dd>
     
 
@@ -5788,7 +5926,7 @@ is hidden from the client-side)
     
 
     
-    <h4 class="name" id="updateMy"><span class="type-signature"></span>updateMy<span class="signature">(data)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="updateMy"><span class="type-signature"></span>updateMy<span class="signature">(data, myRecipeArray)</span><span class="type-signature"></span></h4>
     
 
     
@@ -5852,6 +5990,29 @@ is hidden from the client-side)
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>myRecipeArray</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an array of created recipes.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -5889,7 +6050,7 @@ is hidden from the client-side)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line82">line 82</a>
+        <a href="scripts_helpCrudFunc.js.html">scripts/helpCrudFunc.js</a>, <a href="scripts_helpCrudFunc.js.html#line88">line 88</a>
     </li></ul></dd>
     
 
@@ -5951,7 +6112,7 @@ is hidden from the client-side)
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Sun Dec 05 2021 09:17:11 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Sun Dec 05 2021 09:17:33 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
