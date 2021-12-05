@@ -191,9 +191,9 @@ class NutritionPage extends HTMLElement {
           margin-bottom: 4px;
         }
     `;
-    
+
     styling.innerHTML = styles;
-    
+
     // root element to attach everything to
     let page = document.createElement("article");
     let nutritionData = data["nutrition"]["nutrients"];
@@ -204,7 +204,7 @@ class NutritionPage extends HTMLElement {
     let header = document.createElement("header");
     let headerDiv = document.createElement("div");
     let headerTitle = document.createElement("h1");
-    
+
     headerDiv.classList.add("header-div");
     headerTitle.classList.add("header-title");
     headerTitle.innerHTML = "Nutrition Facts";
@@ -215,7 +215,7 @@ class NutritionPage extends HTMLElement {
     /////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////// Creating the main and origin //////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////
-    
+
     let main = document.createElement("main");
 
     let origin = document.createElement("div");
@@ -224,7 +224,7 @@ class NutritionPage extends HTMLElement {
     /////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////// Creating the Servings /////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////
-    
+
     let amountPerServings = document.createElement("section");
     amountPerServings.classList.add("amountPerServings");
     let servings = document.createElement("div");
@@ -241,7 +241,7 @@ class NutritionPage extends HTMLElement {
     let calculateBtn = document.createElement("button");
     calculateBtn.setAttribute("id", "calculate");
     calculateBtn.innerHTML = "Calculate";
-    
+
     form.appendChild(label);
     form.appendChild(input);
     form.appendChild(calculateBtn)
@@ -251,12 +251,12 @@ class NutritionPage extends HTMLElement {
     /////////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////// Creating the Nutrition Facts /////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////
-    
+
     let facts = document.createElement("section");
     facts.classList.add("facts");
     let gridContainer = document.createElement("div");
     gridContainer.classList.add("grid-container");
-    
+
     let requiredData = ["calories", "fat", "carbohydrates", "sugar", "cholesterol", "sodium", "srotein", "fiber", "copper", "iron", "calcium"];
     // Loop thru the data array and put every nutrtition on
     for (let i = 0; i &lt; nutritionData.length; i++) {
@@ -269,7 +269,7 @@ class NutritionPage extends HTMLElement {
       let amountUnit = document.createElement("div");
       let amount = document.createElement("span");
       let unit = document.createElement("span");
-  
+
       item.classList.add("item");
       nutrition.classList.add(`${dataName.toLowerCase()}`);
       amount.setAttribute("id", "amount-serving");
@@ -286,7 +286,7 @@ class NutritionPage extends HTMLElement {
     }
 
     facts.appendChild(gridContainer);
-    
+
     // Append origin children
     origin.appendChild(amountPerServings);
     origin.appendChild(facts);
@@ -343,7 +343,14 @@ class NutritionPage extends HTMLElement {
   backToView(data) {
     $("#view-nutrition-page").classList.remove("main-shown");
     $("#view-nutrition-page").innerHTML = "";
-    let viewRecipePage = document.createElement("view-fea-recipe");
+    let winWide = window.innerWidth;
+    let viewRecipePage;
+    if (winWide &lt; 1000) {
+      viewRecipePage = document.createElement("view-fea-recipe-mobile");
+    }
+    else {
+      viewRecipePage = document.createElement("view-fea-recipe");
+    }
     viewRecipePage.data = data;
     $("#view-recipe-page").appendChild(viewRecipePage);
     $("#view-recipe-page").classList.add("main-shown");
@@ -361,13 +368,13 @@ customElements.define("nutrition-page", NutritionPage);</code></pre>
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AddRecipe.html">AddRecipe</a></li><li><a href="DeleteConfirmation.html">DeleteConfirmation</a></li><li><a href="EditRecipe.html">EditRecipe</a></li><li><a href="EmptyCard.html">EmptyCard</a></li><li><a href="NewCard.html">NewCard</a></li><li><a href="NewCardMyPage.html">NewCardMyPage</a></li><li><a href="NutritionPage.html">NutritionPage</a></li><li><a href="RecipeCardFea.html">RecipeCardFea</a></li><li><a href="RecipeCardFeaturedPG.html">RecipeCardFeaturedPG</a></li><li><a href="RecipeCardMy.html">RecipeCardMy</a></li><li><a href="RecipeCardMyMyPage.html">RecipeCardMyMyPage</a></li><li><a href="Router.html">Router</a></li><li><a href="ViewFeaRecipe.html">ViewFeaRecipe</a></li><li><a href="ViewMyRecipe.html">ViewMyRecipe</a></li></ul><h3>Global</h3><ul><li><a href="global.html#addFav">addFav</a></li><li><a href="global.html#addMy">addMy</a></li><li><a href="global.html#bindEscKey">bindEscKey</a></li><li><a href="global.html#bindPopstate">bindPopstate</a></li><li><a href="global.html#calculateServing">calculateServing</a></li><li><a href="global.html#checkFav">checkFav</a></li><li><a href="global.html#createFavRecipeCards">createFavRecipeCards</a></li><li><a href="global.html#createFavRecipePage">createFavRecipePage</a></li><li><a href="global.html#createFeaRecipeCards">createFeaRecipeCards</a></li><li><a href="global.html#createFeaRecipePage">createFeaRecipePage</a></li><li><a href="global.html#createMyRecipeCards">createMyRecipeCards</a></li><li><a href="global.html#createMyRecipePage">createMyRecipePage</a></li><li><a href="global.html#createSearch">createSearch</a></li><li><a href="global.html#createSearchFav">createSearchFav</a></li><li><a href="global.html#createSearchFea">createSearchFea</a></li><li><a href="global.html#createSearchMy">createSearchMy</a></li><li><a href="global.html#fetchFeaRecipeArray">fetchFeaRecipeArray</a></li><li><a href="global.html#getDairy">getDairy</a></li><li><a href="global.html#getFeaturedSteps">getFeaturedSteps</a></li><li><a href="global.html#getGluten">getGluten</a></li><li><a href="global.html#getImgUrl">getImgUrl</a></li><li><a href="global.html#getIngre">getIngre</a></li><li><a href="global.html#getIngreArray">getIngreArray</a></li><li><a href="global.html#getIngreFea">getIngreFea</a></li><li><a href="global.html#getSteps">getSteps</a></li><li><a href="global.html#getStepsArray">getStepsArray</a></li><li><a href="global.html#getTime">getTime</a></li><li><a href="global.html#getTitle">getTitle</a></li><li><a href="global.html#getVegan">getVegan</a></li><li><a href="global.html#getVegeta">getVegeta</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#leaveFavorite">leaveFavorite</a></li><li><a href="global.html#leaveFeatured">leaveFeatured</a></li><li><a href="global.html#leaveLanding">leaveLanding</a></li><li><a href="global.html#leaveMain">leaveMain</a></li><li><a href="global.html#leaveMyRecipe">leaveMyRecipe</a></li><li><a href="global.html#leaveSearchPage">leaveSearchPage</a></li><li><a href="global.html#loadFavorite">loadFavorite</a></li><li><a href="global.html#loadFeatured">loadFeatured</a></li><li><a href="global.html#loadLanding">loadLanding</a></li><li><a href="global.html#loadMain">loadMain</a></li><li><a href="global.html#loadMyRecipe">loadMyRecipe</a></li><li><a href="global.html#loadSearchPage">loadSearchPage</a></li><li><a href="global.html#rmFav">rmFav</a></li><li><a href="global.html#rmMy">rmMy</a></li><li><a href="global.html#router">router</a></li><li><a href="global.html#setButtonListen">setButtonListen</a></li><li><a href="global.html#updateMy">updateMy</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AddRecipe.html">AddRecipe</a></li><li><a href="AddRecipeMobile.html">AddRecipeMobile</a></li><li><a href="DeleteConfirmation.html">DeleteConfirmation</a></li><li><a href="EditRecipe.html">EditRecipe</a></li><li><a href="EditRecipeMobile.html">EditRecipeMobile</a></li><li><a href="EmptyCard.html">EmptyCard</a></li><li><a href="NewCard.html">NewCard</a></li><li><a href="NewCardMyPage.html">NewCardMyPage</a></li><li><a href="NutritionPage.html">NutritionPage</a></li><li><a href="RecipeCardFea.html">RecipeCardFea</a></li><li><a href="RecipeCardFeaturedPG.html">RecipeCardFeaturedPG</a></li><li><a href="RecipeCardMy.html">RecipeCardMy</a></li><li><a href="RecipeCardMyMyPage.html">RecipeCardMyMyPage</a></li><li><a href="Router.html">Router</a></li><li><a href="ViewFeaRecipe.html">ViewFeaRecipe</a></li><li><a href="ViewFeaRecipeMobile.html">ViewFeaRecipeMobile</a></li><li><a href="ViewMyRecipe.html">ViewMyRecipe</a></li><li><a href="ViewMyRecipeMobile.html">ViewMyRecipeMobile</a></li></ul><h3>Global</h3><ul><li><a href="global.html#addFav">addFav</a></li><li><a href="global.html#addMy">addMy</a></li><li><a href="global.html#bindEscKey">bindEscKey</a></li><li><a href="global.html#bindPopstate">bindPopstate</a></li><li><a href="global.html#calculateServing">calculateServing</a></li><li><a href="global.html#checkFav">checkFav</a></li><li><a href="global.html#createFavRecipeCards">createFavRecipeCards</a></li><li><a href="global.html#createFavRecipePage">createFavRecipePage</a></li><li><a href="global.html#createFeaRecipeCards">createFeaRecipeCards</a></li><li><a href="global.html#createFeaRecipePage">createFeaRecipePage</a></li><li><a href="global.html#createMyRecipeCards">createMyRecipeCards</a></li><li><a href="global.html#createMyRecipePage">createMyRecipePage</a></li><li><a href="global.html#createSearch">createSearch</a></li><li><a href="global.html#createSearchFav">createSearchFav</a></li><li><a href="global.html#createSearchFea">createSearchFea</a></li><li><a href="global.html#createSearchMy">createSearchMy</a></li><li><a href="global.html#fetchFeaRecipeArray">fetchFeaRecipeArray</a></li><li><a href="global.html#getDairy">getDairy</a></li><li><a href="global.html#getFeaturedSteps">getFeaturedSteps</a></li><li><a href="global.html#getGluten">getGluten</a></li><li><a href="global.html#getImgUrl">getImgUrl</a></li><li><a href="global.html#getIngre">getIngre</a></li><li><a href="global.html#getIngreArray">getIngreArray</a></li><li><a href="global.html#getIngreFea">getIngreFea</a></li><li><a href="global.html#getSteps">getSteps</a></li><li><a href="global.html#getStepsArray">getStepsArray</a></li><li><a href="global.html#getTime">getTime</a></li><li><a href="global.html#getTitle">getTitle</a></li><li><a href="global.html#getVegan">getVegan</a></li><li><a href="global.html#getVegeta">getVegeta</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#leaveFavorite">leaveFavorite</a></li><li><a href="global.html#leaveFeatured">leaveFeatured</a></li><li><a href="global.html#leaveLanding">leaveLanding</a></li><li><a href="global.html#leaveMain">leaveMain</a></li><li><a href="global.html#leaveMyRecipe">leaveMyRecipe</a></li><li><a href="global.html#leaveSearchPage">leaveSearchPage</a></li><li><a href="global.html#loadFavorite">loadFavorite</a></li><li><a href="global.html#loadFeatured">loadFeatured</a></li><li><a href="global.html#loadLanding">loadLanding</a></li><li><a href="global.html#loadMain">loadMain</a></li><li><a href="global.html#loadMyRecipe">loadMyRecipe</a></li><li><a href="global.html#loadSearchPage">loadSearchPage</a></li><li><a href="global.html#rmFav">rmFav</a></li><li><a href="global.html#rmMy">rmMy</a></li><li><a href="global.html#router">router</a></li><li><a href="global.html#setButtonListen">setButtonListen</a></li><li><a href="global.html#updateMy">updateMy</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Sun Dec 05 2021 09:17:33 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.4</a> on Sun Dec 05 2021 09:18:02 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
